@@ -1,28 +1,44 @@
-// 导入的时候不需要加_ 其实是sass对模块化的一种支持  这些文件只能当作模块导入 不能单独使用
-@import 'variables';
+// config
+@import "variables";
 
-// layout
-@import 'reboot';
+//layout
+@import "reboot";
 
 //mixin
-@import 'mixin.scss';
+@import "mixin";
 
-@import "animation.scss";
-
+// animation
+@import "animation";
 // button
-@import '../components/Button/style';
+
+@import "../components/Button/style";
+
+//alert
+@import "../components/Alert/style";
 
 // menu
-@import '../components/Menu/style';
+@import "../components/Menu/style";
 
-//icon
+//navs
+@import "../components/Tabs/style";
+
+// icon
 @import "../components/Icon/style";
 
-// preview
-@import "../components/PreviewImage/style";
+//input
+@import "../components/Input/style";
 
-@import "../components/Tree/components/style";
+//auto-complete
+@import "../components/AutoComplete/style";
 
+//select
+@import "../components/Select/style";
+
+//upload
 @import "../components/Upload/style";
 
+//progress
 @import "../components/Progress/style";
+
+// form
+@import "../components/Form/style";
