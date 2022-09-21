@@ -1,3 +1,6 @@
-import Input from './input'
+import _Input from './input';
 
-export default Input
+export * from './type';
+
+export const Input = _Input;
+export default Input;

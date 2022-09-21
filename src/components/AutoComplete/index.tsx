@@ -1,3 +1,6 @@
-import AutoComplete from './autoComplete'
+import _AutoComplete from './autoComplete';
 
-export default AutoComplete
+export * from './type';
+
+export const AutoComplete = _AutoComplete;
+export default AutoComplete;
