@@ -1,3 +1,6 @@
-import Icon from './icon'
+import _Icon from './icon';
 
-export default Icon
+export * from './icon';
+
+export const Icon = _Icon;
+export default Icon;

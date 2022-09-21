@@ -1,7 +1,7 @@
 import React from 'react'
 import { config } from 'react-transition-group'
 import { render, RenderResult, fireEvent, waitFor } from '@testing-library/react'
-import { AutoComplete, AutoCompleteProps, DataSourceType } from './autoComplete'
+import { AutoComplete, AutoCompleteProps, DataSourceType } from './index'
 
 config.disabled = true
 jest.mock('../Icon/icon', () => {

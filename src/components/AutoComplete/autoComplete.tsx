@@ -22,7 +22,7 @@ import { AutoCompleteProps, DataSourceType } from './type';
  * import { AutoComplete } from 'vikingship'
  * ~~~
  */
-export const AutoComplete: FC<AutoCompleteProps> = (props) => {
+const AutoComplete: FC<AutoCompleteProps> = (props) => {
   const {
     fetchSuggestions,
     onSelect,
