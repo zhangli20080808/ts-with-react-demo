@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+## npm 安装问题
+--legacy-peer-deps标志是在v7中引入的，目的是绕过peerDependency自动安装；它告诉 NPM 忽略项目中引入的各个modules之间的相同modules但不同版本的问题并继续安装，保证各个引入的依赖之间对自身所使用的不同版本modules共存。
+## rollup 小结
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+目的 - 将一系列互相依赖的模块代码，打包生成处理完依赖关系的一个或者几个大的文件，可以胜任 web 应用或者第三方库
 
-## Available Scripts
+```js
+// 安装
+npm install rollup -g // 全局
+npm install rollup -D
+// 简单实用
+format 格式 - 可选
+1. iife  - 自执行函数包裹
+2. cjs  - commonjs
+3. es - es modules
+rollup main.js --file bundle.js --format iife
 
-In the project directory, you can run:
+```
 
-### `npm start`
+## 基本插件
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- commonjs 格式处理 @rollup/plugin-commonjs
+- json 文件处理 @rollup/plugin-json
+- node-resolve 第三方库路径处理 @rollup/plugin-node-resolve
+- typescript 格式处理 @rollup-plugin-typescript2
