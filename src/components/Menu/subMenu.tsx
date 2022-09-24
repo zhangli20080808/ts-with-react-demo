@@ -6,7 +6,7 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 import { MenuContext } from './menu';
-import { MenuItemProps } from './menuItem';
+import { MenuItemProps } from './type';
 import Icon from '../Icon/icon';
 import Transition from '../Transition/transition';
 import { SubMenuProps } from './type';

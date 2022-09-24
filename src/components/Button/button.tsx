@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import classNames from 'classnames';
 import { ButtonProps } from './type';
 
-export const Button: FC<ButtonProps> = (props) => {
+const Button: FC<ButtonProps> = (props) => {
   const { btnType, className, disabled, size, children, href, ...restProps } =
     props;
   // btn, btn-lg, btn-primary

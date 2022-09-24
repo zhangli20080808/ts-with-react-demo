@@ -7,14 +7,13 @@ import React from 'react';
  当input的值发生改变的时候，把值放到 formInstance.store  
  <Field name="username">
  */
- class Field extends React.Component {
-    getControlled = () => {
-        
-    }
-    render() {
-        let children = this.props.children; // 获取原来的儿子  <Input placeholder="Password" />
-        return React.cloneElement(children, this.getControlled(children.props));
-      }
- }
+class Field extends React.Component {
+  getControlled = () => {};
+  render() {
+    return <div>1</div>;
+    // let children = this.props.children; // 获取原来的儿子  <Input placeholder="Password" />
+    // return React.cloneElement(children, this.getControlled(children.props));
+  }
+}
 
 export default Field;

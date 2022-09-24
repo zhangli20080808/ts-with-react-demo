@@ -1,6 +1,6 @@
 import React, { FC, useState, createContext } from 'react';
 import classNames from 'classnames';
-import { MenuItemProps } from './menuItem';
+import { MenuItemProps } from './type';
 import { IMenuContext, MenuProps } from './type';
 export const MenuContext = createContext<IMenuContext>({ index: '0' });
 /**

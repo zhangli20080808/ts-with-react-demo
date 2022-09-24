@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import _Menu from './menu';
 import { MenuProps } from './type';
-import SubMenu, { SubMenuProps } from './subMenu';
-import MenuItem, { MenuItemProps } from './menuItem';
+import SubMenu from './subMenu';
+import MenuItem from './menuItem';
+
+import {SubMenuProps,MenuItemProps} from './type'
 
 export * from './type';
 
