@@ -1,7 +1,9 @@
 {
-  "name": "ts-with-react",
+  "name": "design-component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "zl",
+  "description": "this is a learning component about react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -28,7 +30,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-es": "npm run clean && rollup --config ./rollup/rollup.esm.config.js",
-    "build-umd": "npm run clean && rollup --config ./rollup/rollup.umd.config.js"
+    "build-umd": "npm run clean && rollup --config ./rollup/rollup.umd.config.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "Component",
